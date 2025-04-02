@@ -3,10 +3,11 @@ from functools import lru_cache
 from dataclasses import dataclass
 import numpy as np
 from app.audio_utils import resample_audio_librosa
+from app.config import config
 
 @lru_cache(maxsize=None)
 def load_model():
-    return AutoModel(model="paraformer-zh-streaming", device = "cuda:0")
+    return AutoModel(model="paraformer-zh-streaming", device = config.device)
 
 @dataclass
 class ParaformerStreaming:

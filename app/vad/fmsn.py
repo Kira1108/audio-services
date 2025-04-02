@@ -3,10 +3,11 @@ from functools import lru_cache
 import numpy as np
 from funasr import AutoModel
 from app.audio_utils import resample_audio_librosa
+from app.config import config
 
 @lru_cache(maxsize=None)
 def load_fmsn():
-    return AutoModel(model="fsmn-vad", model_revision="v2.0.4")
+    return AutoModel(model="fsmn-vad", model_revision="v2.0.4", device = config.device)
 
 @dataclass
 class FMSNVad:
