@@ -22,6 +22,7 @@ class AudioInputPipeline:
         self.speech_cache = np.array([])
         self.chunk_id = 0
         self.conversation_id = str(uuid4())
+        self.partial_cache = np.array([])
         
     def parse(
         self, 
@@ -35,6 +36,7 @@ class AudioInputPipeline:
         # 语音流缓存
         speech_chunk = np.array(speech_chunk)
         self.speech_cache = np.concatenate([self.speech_cache, speech_chunk], axis = 0)
+        
 
         vad_result = self.vad.vad(
             speech_chunk, 
@@ -62,9 +64,6 @@ class AudioInputPipeline:
         self.stream_cache.append(asr_result)
         
         if complete_vad:
-            # t = [v[0]['text'] for v in self.temp_cache]
-            # output = "".join(t)
-            # 重置vad缓存
             self.speech_cache = np.array([])
             self.temp_cache = []
             output = self.punc_model.run(asr_result)
