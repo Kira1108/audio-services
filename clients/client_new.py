@@ -61,4 +61,7 @@ if __name__ == "__main__":
     speech, _ = soundfile.read(wav_file)
     res = asyncio.run(stream_asr(speech))
     print('Got result', res)
+    import json
+    with open('result.json', 'w') as f:
+        json.dump(res, f, indent=4)
 
