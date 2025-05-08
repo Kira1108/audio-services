@@ -10,15 +10,14 @@ import numpy as np
 @dataclass
 class AudioInputPipeline:
     
-    chunk_ms: int = 600
+    chunk_ms: int = 200
     
     def __post_init__(self):
         self.vad = FMSNVad()
-        self.asr = ParaformerStreaming(chunk_ms=self.chunk_ms)
+        self.asr = ParaformerStreaming(chunk_ms=600)
         self.offline = ParaformerOffline()
         self.punc_model = PunctuationModel()
         self.stream_cache = []
-        self.temp_cache = []
         self.speech_cache = np.array([])
         self.chunk_id = 0
         self.conversation_id = str(uuid4())
@@ -36,6 +35,7 @@ class AudioInputPipeline:
         # 语音流缓存
         speech_chunk = np.array(speech_chunk)
         self.speech_cache = np.concatenate([self.speech_cache, speech_chunk], axis = 0)
+        self.partial_cache = np.concatenate([self.partial_cache, speech_chunk], axis = 0)
         
 
         vad_result = self.vad.vad(
@@ -45,13 +45,25 @@ class AudioInputPipeline:
         
         complete_vad = vad_result or is_final
         
+        # 如果未检测到稳态
         if not complete_vad:
-            asr_result = self.asr.run(
-                speech_chunk, 
-                sampling_rate=sampling_rate, 
-                is_final = is_final)
+            
+            # 如果缓存的语音流小于9600帧
+            if len(self.partial_cache) < 9600:
+                self.chunk_id += 1
+                return None
+            
+            else:
+                asr_result = self.asr.run(
+                    self.partial_cache, 
+                    sampling_rate=sampling_rate, 
+                    is_final = is_final)
+                self.partial_cache = np.array([])
+        
+        # 如果检测到稳态
         else:
             asr_result = self.offline.run(self.speech_cache)
+            self.partial_cache = np.array([])
             
             
         if len(asr_result) == 0:
@@ -65,11 +77,9 @@ class AudioInputPipeline:
         
         if complete_vad:
             self.speech_cache = np.array([])
-            self.temp_cache = []
             output = self.punc_model.run(asr_result)
             is_partial = False
         else:
-            self.temp_cache.append(asr_result)
             output = asr_result
             is_partial = True
             

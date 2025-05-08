@@ -10,7 +10,7 @@ def load_model():
         model="paraformer-zh",  
         vad_model="fsmn-vad",  
         punc_model="ct-punc",
-        device = 'cuda:0',
+        device = 'cuda:1',
         disable_update = True)
 
 @dataclass
