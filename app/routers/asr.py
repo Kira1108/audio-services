@@ -69,7 +69,7 @@ async def websocket_pipeline_endpoint(websocket: WebSocket, sessionId: Optional[
             await websocket.send_json(   
             {
                 "code":0,
-                "message":"success",
+                "msg":"success",
                 "data": asr_info.model_dump()
             }
             )
