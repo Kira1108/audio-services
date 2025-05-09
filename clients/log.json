@@ -2,77 +2,42 @@
     {
         "type": "begin",
         "chunk_id": 0,
-        "timestamp": 1746781497.8917918
+        "timestamp": 1746781719.482722
     },
     {
         "type": "send",
         "chunk_id": 1,
-        "timestamp": 1746781498.0945978
+        "timestamp": 1746781719.6849961
     },
     {
         "type": "send",
         "chunk_id": 2,
-        "timestamp": 1746781498.2968168
+        "timestamp": 1746781719.8977559
     },
     {
         "type": "send",
         "chunk_id": 3,
-        "timestamp": 1746781498.499969
+        "timestamp": 1746781720.0993972
     },
     {
         "type": "send",
         "chunk_id": 4,
-        "timestamp": 1746781498.704892
+        "timestamp": 1746781720.302903
     },
     {
         "type": "send",
         "chunk_id": 5,
-        "timestamp": 1746781498.9157472
+        "timestamp": 1746781720.508666
     },
     {
         "type": "send",
         "chunk_id": 6,
-        "timestamp": 1746781499.121707
-    },
-    {
-        "type": "send",
-        "chunk_id": 7,
-        "timestamp": 1746781499.332298
-    },
-    {
-        "type": "send",
-        "chunk_id": 8,
-        "timestamp": 1746781499.53776
-    },
-    {
-        "type": "send",
-        "chunk_id": 9,
-        "timestamp": 1746781499.743686
-    },
-    {
-        "type": "send",
-        "chunk_id": 10,
-        "timestamp": 1746781499.9492621
-    },
-    {
-        "type": "send",
-        "chunk_id": 11,
-        "timestamp": 1746781500.154846
-    },
-    {
-        "type": "send",
-        "chunk_id": 12,
-        "timestamp": 1746781500.3591108
-    },
-    {
-        "type": "send",
-        "chunk_id": 13,
-        "timestamp": 1746781500.563914
+        "timestamp": 1746781720.718004
     },
     {
         "type": "receive",
         "chunk_id": 1,
-        "timestamp": 1746781500.667587,
+        "timestamp": 1746781720.7552052,
         "start_time": 400,
         "end_time": 600,
         "text": "",
@@ -80,18 +45,13 @@
     },
     {
         "type": "send",
-        "chunk_id": 14,
-        "timestamp": 1746781500.7689059
-    },
-    {
-        "type": "send",
-        "chunk_id": 15,
-        "timestamp": 1746781500.974338
+        "chunk_id": 7,
+        "timestamp": 1746781720.92391
     },
     {
         "type": "receive",
         "chunk_id": 2,
-        "timestamp": 1746781500.9747999,
+        "timestamp": 1746781721.071059,
         "start_time": 1000,
         "end_time": 1200,
         "text": "",
@@ -99,28 +59,28 @@
     },
     {
         "type": "send",
-        "chunk_id": 16,
-        "timestamp": 1746781501.1796181
+        "chunk_id": 8,
+        "timestamp": 1746781721.127616
     },
     {
         "type": "send",
-        "chunk_id": 17,
-        "timestamp": 1746781501.3849611
+        "chunk_id": 9,
+        "timestamp": 1746781721.336759
     },
     {
         "type": "send",
-        "chunk_id": 18,
-        "timestamp": 1746781501.589768
+        "chunk_id": 10,
+        "timestamp": 1746781721.5410612
     },
     {
         "type": "send",
-        "chunk_id": 19,
-        "timestamp": 1746781501.79485
+        "chunk_id": 11,
+        "timestamp": 1746781721.754215
     },
     {
         "type": "receive",
         "chunk_id": 3,
-        "timestamp": 1746781501.797921,
+        "timestamp": 1746781721.836143,
         "start_time": 1600,
         "end_time": 1800,
         "text": "你好你",
@@ -128,13 +88,23 @@
     },
     {
         "type": "send",
-        "chunk_id": 20,
-        "timestamp": 1746781502.003587
+        "chunk_id": 12,
+        "timestamp": 1746781721.957869
+    },
+    {
+        "type": "send",
+        "chunk_id": 13,
+        "timestamp": 1746781722.1633978
+    },
+    {
+        "type": "send",
+        "chunk_id": 14,
+        "timestamp": 1746781722.3693
     },
     {
         "type": "receive",
         "chunk_id": 4,
-        "timestamp": 1746781502.180877,
+        "timestamp": 1746781722.502919,
         "start_time": 2200,
         "end_time": 2400,
         "text": "好",
@@ -142,234 +112,264 @@
     },
     {
         "type": "send",
-        "chunk_id": 21,
-        "timestamp": 1746781502.209834
+        "chunk_id": 15,
+        "timestamp": 1746781722.5746932
     },
     {
         "type": "send",
-        "chunk_id": 22,
-        "timestamp": 1746781502.4138198
+        "chunk_id": 16,
+        "timestamp": 1746781722.780766
     },
     {
         "type": "send",
-        "chunk_id": 23,
-        "timestamp": 1746781502.617594
+        "chunk_id": 17,
+        "timestamp": 1746781722.988487
     },
     {
         "type": "send",
-        "chunk_id": 24,
-        "timestamp": 1746781502.8202949
+        "chunk_id": 18,
+        "timestamp": 1746781723.195178
     },
     {
         "type": "send",
-        "chunk_id": 25,
-        "timestamp": 1746781503.047734
+        "chunk_id": 19,
+        "timestamp": 1746781723.401214
     },
     {
         "type": "send",
-        "chunk_id": 26,
-        "timestamp": 1746781503.251578
-    },
-    {
-        "type": "send",
-        "chunk_id": 27,
-        "timestamp": 1746781503.455839
-    },
-    {
-        "type": "send",
-        "chunk_id": 28,
-        "timestamp": 1746781503.659776
-    },
-    {
-        "type": "send",
-        "chunk_id": 29,
-        "timestamp": 1746781503.864253
-    },
-    {
-        "type": "send",
-        "chunk_id": 30,
-        "timestamp": 1746781504.070082
-    },
-    {
-        "type": "send",
-        "chunk_id": 31,
-        "timestamp": 1746781504.2763982
-    },
-    {
-        "type": "send",
-        "chunk_id": 32,
-        "timestamp": 1746781504.4831831
-    },
-    {
-        "type": "send",
-        "chunk_id": 33,
-        "timestamp": 1746781504.688441
-    },
-    {
-        "type": "send",
-        "chunk_id": 34,
-        "timestamp": 1746781504.8949702
-    },
-    {
-        "type": "send",
-        "chunk_id": 35,
-        "timestamp": 1746781505.09854
-    },
-    {
-        "type": "send",
-        "chunk_id": 36,
-        "timestamp": 1746781505.301461
-    },
-    {
-        "type": "send",
-        "chunk_id": 37,
-        "timestamp": 1746781505.504846
-    },
-    {
-        "type": "send",
-        "chunk_id": 38,
-        "timestamp": 1746781505.707957
-    },
-    {
-        "type": "send",
-        "chunk_id": 39,
-        "timestamp": 1746781505.911455
-    },
-    {
-        "type": "send",
-        "chunk_id": 40,
-        "timestamp": 1746781506.1159139
-    },
-    {
-        "type": "send",
-        "chunk_id": 41,
-        "timestamp": 1746781506.3197691
-    },
-    {
-        "type": "send",
-        "chunk_id": 42,
-        "timestamp": 1746781506.523797
-    },
-    {
-        "type": "send",
-        "chunk_id": 43,
-        "timestamp": 1746781506.7273521
-    },
-    {
-        "type": "send",
-        "chunk_id": 44,
-        "timestamp": 1746781506.932958
-    },
-    {
-        "type": "send",
-        "chunk_id": 45,
-        "timestamp": 1746781507.13788
-    },
-    {
-        "type": "send",
-        "chunk_id": 46,
-        "timestamp": 1746781507.345104
-    },
-    {
-        "type": "send",
-        "chunk_id": 47,
-        "timestamp": 1746781507.553045
-    },
-    {
-        "type": "send",
-        "chunk_id": 48,
-        "timestamp": 1746781507.75684
-    },
-    {
-        "type": "send",
-        "chunk_id": 49,
-        "timestamp": 1746781507.958405
+        "chunk_id": 20,
+        "timestamp": 1746781723.6059961
     },
     {
         "type": "receive",
         "chunk_id": 5,
-        "timestamp": 1746781510.562829,
+        "timestamp": 1746781723.692172,
         "start_time": 2600,
         "end_time": 2800,
-        "text": "你好你好。。",
+        "text": "你好你好。",
         "is_partial": false
+    },
+    {
+        "type": "send",
+        "chunk_id": 21,
+        "timestamp": 1746781723.813607
+    },
+    {
+        "type": "send",
+        "chunk_id": 22,
+        "timestamp": 1746781724.0166988
     },
     {
         "type": "receive",
         "chunk_id": 6,
-        "timestamp": 1746781511.155732,
+        "timestamp": 1746781724.083922,
         "start_time": 3200,
         "end_time": 3400,
         "text": "",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 23,
+        "timestamp": 1746781724.224116
+    },
+    {
+        "type": "send",
+        "chunk_id": 24,
+        "timestamp": 1746781724.427732
+    },
+    {
         "type": "receive",
         "chunk_id": 7,
-        "timestamp": 1746781511.5945191,
+        "timestamp": 1746781724.489662,
         "start_time": 3800,
         "end_time": 4000,
         "text": "今天你",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 25,
+        "timestamp": 1746781724.6326468
+    },
+    {
         "type": "receive",
         "chunk_id": 8,
-        "timestamp": 1746781511.977281,
+        "timestamp": 1746781724.807921,
         "start_time": 4400,
         "end_time": 4600,
         "text": "开心吗",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 26,
+        "timestamp": 1746781724.839075
+    },
+    {
+        "type": "send",
+        "chunk_id": 27,
+        "timestamp": 1746781725.049361
+    },
+    {
+        "type": "send",
+        "chunk_id": 28,
+        "timestamp": 1746781725.257997
+    },
+    {
+        "type": "send",
+        "chunk_id": 29,
+        "timestamp": 1746781725.46694
+    },
+    {
+        "type": "send",
+        "chunk_id": 30,
+        "timestamp": 1746781725.706175
+    },
+    {
+        "type": "send",
+        "chunk_id": 31,
+        "timestamp": 1746781725.91091
+    },
+    {
         "type": "receive",
         "chunk_id": 9,
-        "timestamp": 1746781513.237629,
+        "timestamp": 1746781725.969046,
         "start_time": 4800,
         "end_time": 5000,
-        "text": "今天你开心吗？？。",
+        "text": "今天你开心吗？",
         "is_partial": false
+    },
+    {
+        "type": "send",
+        "chunk_id": 32,
+        "timestamp": 1746781726.116291
+    },
+    {
+        "type": "send",
+        "chunk_id": 33,
+        "timestamp": 1746781726.324926
+    },
+    {
+        "type": "send",
+        "chunk_id": 34,
+        "timestamp": 1746781726.53214
     },
     {
         "type": "receive",
         "chunk_id": 10,
-        "timestamp": 1746781514.503278,
+        "timestamp": 1746781726.646129,
         "start_time": 5400,
         "end_time": 5600,
         "text": "你们",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 35,
+        "timestamp": 1746781726.736737
+    },
+    {
+        "type": "send",
+        "chunk_id": 36,
+        "timestamp": 1746781726.9403589
+    },
+    {
         "type": "receive",
         "chunk_id": 11,
-        "timestamp": 1746781514.90533,
+        "timestamp": 1746781727.049403,
         "start_time": 6000,
         "end_time": 6200,
         "text": "公司有什么",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 37,
+        "timestamp": 1746781727.162286
+    },
+    {
+        "type": "send",
+        "chunk_id": 38,
+        "timestamp": 1746781727.368733
+    },
+    {
         "type": "receive",
         "chunk_id": 12,
-        "timestamp": 1746781515.34369,
+        "timestamp": 1746781727.569083,
         "start_time": 6600,
         "end_time": 6800,
         "text": "产品",
         "is_partial": true
     },
     {
+        "type": "send",
+        "chunk_id": 39,
+        "timestamp": 1746781727.5736551
+    },
+    {
+        "type": "send",
+        "chunk_id": 40,
+        "timestamp": 1746781727.7762098
+    },
+    {
+        "type": "send",
+        "chunk_id": 41,
+        "timestamp": 1746781727.980984
+    },
+    {
+        "type": "send",
+        "chunk_id": 42,
+        "timestamp": 1746781728.1867251
+    },
+    {
+        "type": "send",
+        "chunk_id": 43,
+        "timestamp": 1746781728.392009
+    },
+    {
+        "type": "send",
+        "chunk_id": 44,
+        "timestamp": 1746781728.597413
+    },
+    {
+        "type": "send",
+        "chunk_id": 45,
+        "timestamp": 1746781728.802902
+    },
+    {
+        "type": "send",
+        "chunk_id": 46,
+        "timestamp": 1746781729.009013
+    },
+    {
         "type": "receive",
         "chunk_id": 13,
-        "timestamp": 1746781516.89105,
+        "timestamp": 1746781729.0581,
         "start_time": 7200,
         "end_time": 7400,
-        "text": "你们公司有什么产品？？？",
+        "text": "你们公司有什么产品？",
         "is_partial": false
+    },
+    {
+        "type": "send",
+        "chunk_id": 47,
+        "timestamp": 1746781729.214249
+    },
+    {
+        "type": "send",
+        "chunk_id": 48,
+        "timestamp": 1746781729.4224331
+    },
+    {
+        "type": "send",
+        "chunk_id": 49,
+        "timestamp": 1746781729.62433
     },
     {
         "type": "receive",
         "chunk_id": 14,
-        "timestamp": 1746781517.82599,
+        "timestamp": 1746781729.868928,
         "start_time": 7800,
         "end_time": 8000,
         "text": "",
@@ -378,7 +378,7 @@
     {
         "type": "receive",
         "chunk_id": 15,
-        "timestamp": 1746781518.298534,
+        "timestamp": 1746781730.655367,
         "start_time": 8400,
         "end_time": 8600,
         "text": "你们",
@@ -387,7 +387,7 @@
     {
         "type": "receive",
         "chunk_id": 16,
-        "timestamp": 1746781518.913314,
+        "timestamp": 1746781731.002547,
         "start_time": 9000,
         "end_time": 9200,
         "text": "公司是做",
@@ -396,10 +396,10 @@
     {
         "type": "receive",
         "chunk_id": 17,
-        "timestamp": 1746781520.244857,
+        "timestamp": 1746781732.136225,
         "start_time": 9600,
         "end_time": 9800,
-        "text": "你们公司是做金融的吗？？。",
+        "text": "你们公司是做金融的吗？",
         "is_partial": false
     }
 ]
