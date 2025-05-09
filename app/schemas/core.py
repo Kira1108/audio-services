@@ -7,3 +7,9 @@ class ASRResult(BaseModel):
     end_time: int = Field(..., description="The end time of the chunk in milliseconds")
     text: str = Field(..., description="The transcribed text")
     is_partial:bool = Field(..., description="Whether the result is partial or final")
+    
+    
+class VestaResponse(BaseModel):
+    code:int = Field(default = 0, description="The response code")
+    message:str = Field(default = 'success', description="The response message")
+    data:ASRResult = Field(default = None, description="The ASR result data")

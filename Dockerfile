@@ -22,4 +22,4 @@ RUN pip install -r requirements.txt --index-url https://mirrors.tuna.tsinghua.ed
 
 COPY . .
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7891","--reload", "--log-config=log_conf.yaml"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000","--reload", "--log-config=log_conf.yaml"]
