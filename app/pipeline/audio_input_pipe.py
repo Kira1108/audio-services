@@ -77,7 +77,7 @@ class AudioInputPipeline:
         
         if complete_vad:
             self.speech_cache = np.array([])
-            output = self.punc_model.run(asr_result)
+            output = asr_result #self.punc_model.run(asr_result)
             is_partial = False
         else:
             output = asr_result
