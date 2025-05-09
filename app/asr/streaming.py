@@ -2,7 +2,7 @@ from funasr import AutoModel
 from functools import lru_cache
 from dataclasses import dataclass
 import numpy as np
-from app.audio_utils import resample_audio_librosa
+# from app.audio_utils import resample_audio_librosa
 from app.log import timer
 from app.config import get_config
 
@@ -30,8 +30,8 @@ class ParaformerStreaming:
     @timer("ParaformerStreaming")
     def run(self, speech_chunk, sampling_rate:int =16000, is_final = False):
         
-        if not sampling_rate != 16000:
-            speech_chunk = resample_audio_librosa(speech_chunk, sampling_rate, 16000)
+        # if not sampling_rate != 16000:
+        #     speech_chunk = resample_audio_librosa(speech_chunk, sampling_rate, 16000)
             
         speech_chunk = np.array(speech_chunk).astype("float32")
         

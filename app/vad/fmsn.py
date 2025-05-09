@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 import numpy as np
 from funasr import AutoModel
-from app.audio_utils import resample_audio_librosa
+# from app.audio_utils import resample_audio_librosa
 from app.log import timer
 from app.config import get_config
 
@@ -24,8 +24,8 @@ class FMSNVad:
         self.timestamp = 0
         
     def run(self, speech_chunk, sample_rate:int = 16000, is_final:bool = False):
-        if not sample_rate == 16000:
-            speech_chunk = resample_audio_librosa(speech_chunk, sample_rate, 16000)
+        # if not sample_rate == 16000:
+        #     speech_chunk = resample_audio_librosa(speech_chunk, sample_rate, 16000)
             
         chunk_seconds = int(len(speech_chunk) * 1000 // 16000)  # in milliseconds
         speech_chunk = np.array(speech_chunk).astype("float32") # convert to float32 type
