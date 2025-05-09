@@ -7,6 +7,12 @@ ENV PYTHONUNBUFFERED=1
 
 EXPOSE 8000
 
+# Install libgomp1 and ffmpeg for audio processing
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgomp1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN pip install --no-cache-dir -U pip && pip install setuptools wheel
 
 COPY requirements.txt ./
