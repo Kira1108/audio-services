@@ -3,14 +3,18 @@ from functools import lru_cache
 from dataclasses import dataclass
 import logging
 from app.log import timer
+from app.config import get_config
+
+
+config = get_config()
 
 @lru_cache(maxsize=None)
 def load_model():
     return AutoModel(
-        model="paraformer-zh",  
-        vad_model="fsmn-vad",  
-        punc_model="ct-punc",
-        device = 'cuda:1',
+        model=config.offline_asr_model_path,  
+        vad_model=config.offline_vad_model_path,  
+        punc_model=config.offline_punc_model_path,
+        device = config.offline_model_device,
         disable_update = True)
 
 @dataclass

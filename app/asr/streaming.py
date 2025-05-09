@@ -4,10 +4,17 @@ from dataclasses import dataclass
 import numpy as np
 from app.audio_utils import resample_audio_librosa
 from app.log import timer
+from app.config import get_config
+
+
+config = get_config()
 
 @lru_cache(maxsize=None)
 def load_model():
-    return AutoModel(model="paraformer-zh-streaming", device = "cuda:0",disable_update = True)
+    return AutoModel(
+        model=config.online_asr_model_path, 
+        device = config.online_model_device,
+        disable_update = True)
 
 @dataclass
 class ParaformerStreaming:

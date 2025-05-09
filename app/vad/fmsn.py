@@ -4,10 +4,16 @@ import numpy as np
 from funasr import AutoModel
 from app.audio_utils import resample_audio_librosa
 from app.log import timer
+from app.config import get_config
+
+config = get_config()
 
 @lru_cache(maxsize=None)
 def load_fmsn():
-    return AutoModel(model="fsmn-vad", model_revision="v2.0.4",disable_update = True)
+    return AutoModel(
+        model=config.online_vad_model_path,
+        model_revision="v2.0.4",
+        disable_update = True)
 
 @dataclass
 class FMSNVad:

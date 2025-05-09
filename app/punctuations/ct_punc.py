@@ -2,10 +2,16 @@ from funasr import AutoModel
 from functools import lru_cache
 from dataclasses import dataclass
 from app.log import timer
+from app.config import get_config
+
+config = get_config()
 
 @lru_cache(maxsize=None)
 def load_punc_model():
-    return AutoModel(model="ct-punc", model_revision="v2.0.4",disable_update = True)
+    return AutoModel(
+        model= config.offline_punc_model_path, 
+        model_revision="v2.0.4",
+        disable_update = True)
 
 @dataclass
 class PunctuationModel:
