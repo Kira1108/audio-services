@@ -11,8 +11,8 @@ RUN pip install --no-cache-dir -U pip && pip install setuptools wheel
 
 COPY requirements.txt ./
 
-RUN pip install -r requirements.txt --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple some-package
+RUN pip install -r requirements.txt --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 
 COPY . .
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000","--reload", "--log-config=log_conf.yaml"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7891","--reload", "--log-config=log_conf.yaml"]
