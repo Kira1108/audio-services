@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir -U pip && pip install setuptools wheel
+RUN pip install --no-cache-dir -U --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple pip \
+    && pip install setuptools wheel --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 
 COPY requirements.txt ./
 
