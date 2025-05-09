@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+
+  web:
+    build: .
+    container_name: tcheck
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --workers 1 --log-config=log_conf.yaml
+    volumes: 
+      - .:/usr/src/app
+    ports:
+      - 7891:8000
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+
