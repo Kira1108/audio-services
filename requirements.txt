@@ -19,3 +19,4 @@ onnx==1.17.0
 onnxruntime==1.21.1
 onnxconverter-common==1.14.0
 python-multipart==0.0.20
+funasr_onnx==0.4.1

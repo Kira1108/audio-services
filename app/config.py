@@ -11,7 +11,7 @@ class Config:
     resource_path: str = Path(__file__).parents[1] / "resources" / "modelscope" / "hub" / "iic"
     
     # 模型文件的存储路径
-    offline_asr_model_name: str = "speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch"
+    offline_asr_model_name: str = "speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch"
     offline_vad_model_name: str = "speech_fsmn_vad_zh-cn-16k-common-pytorch"
     offline_punc_model_name: str = "punc_ct-transformer_cn-en-common-vocab471067-large"
     online_asr_model_name: str = "speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online"
