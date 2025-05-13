@@ -5,6 +5,7 @@ import logging
 from app.log import timer
 from app.config import get_config
 from funasr_onnx import Paraformer
+from funasr.utils.postprocess_utils import  rich_transcription_postprocess
 from app.punctuations.ct_punc import PunctuationModel
 import numpy as np
 
@@ -62,6 +63,7 @@ class ParaformerOffline:
                 return ""
             
             res = self.punc_model.run(res)
+            res = rich_transcription_postprocess(res)
         except Exception as e:
             logging.info(f"Error processing offline ASR: {str(fp)}")
             raise e
