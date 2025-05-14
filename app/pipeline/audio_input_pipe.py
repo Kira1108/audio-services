@@ -162,7 +162,7 @@ class AudioInputPipeline:
                 chunk_id=self.chunk_id + 1,
                 start_time=start_time,
                 end_time=end_time,
-                text=complete_asr_result,
+                text=complete_asr_result.strip(),
                 is_partial=is_partial
             )
             
@@ -198,7 +198,7 @@ class AudioInputPipeline:
                 chunk_id=self.chunk_id + 1,
                 start_time=start_time,
                 end_time=end_time,
-                text=partial_asr_result,
+                text=partial_asr_result.strip(),
                 is_partial=is_partial
             )
         

@@ -64,6 +64,9 @@ async def websocket_pipeline_endpoint(websocket: WebSocket, sessionId: Optional[
         if asr_info is None:
             continue
         
+        if len(asr_info.text) == 0:
+            continue
+        
         else:
             
             await websocket.send_json(   
