@@ -26,6 +26,13 @@ class ParaformerStreaming:
         self.model = load_model()
         self.cache = {}
         self.chunk_size = [0, int(self.chunk_ms / 60), int(self.chunk_ms / 120)]
+        
+
+    def new(self):
+        return ParaformerStreaming(
+            chunk_ms=self.chunk_ms,
+            encoder_chunk_look_back=self.encoder_chunk_look_back, 
+            decoder_chunk_look_back=self.decoder_chunk_look_back)
     
     @timer("ParaformerStreaming")
     def run(self, speech_chunk, sampling_rate:int =16000, is_final = False):
