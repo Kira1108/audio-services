@@ -1,0 +1,138 @@
+2025-05-13 01:47:46,067 - uvicorn.error - WARNING - StatReload detected changes in 'app/asr/offline.py'. Reloading...
+2025-05-13 01:47:54,692 - root - INFO - download models from model hub: ms
+2025-05-13 01:47:59,534 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 01:47:59,541 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 01:48:08,727 - uvicorn.error - WARNING - StatReload detected changes in 'app/asr/offline.py'. Reloading...
+2025-05-13 01:48:13,478 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:48:13,480 - root - INFO - excludes: None
+2025-05-13 01:48:13,824 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt, status: <All keys matched successfully>
+2025-05-13 01:48:13,835 - root - INFO - download models from model hub: ms
+2025-05-13 01:48:13,859 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 01:48:13,860 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 01:48:13,875 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:48:13,875 - root - INFO - excludes: None
+2025-05-13 01:48:13,876 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt, status: <All keys matched successfully>
+2025-05-13 01:48:16,359 - root - INFO - download models from model hub: ms
+2025-05-13 01:48:21,604 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-13 01:48:21,606 - jieba - DEBUG - Loading model from cache /tmp/jieba.cache
+2025-05-13 01:48:22,378 - jieba - DEBUG - Loading model cost 0.772 seconds.
+2025-05-13 01:48:22,378 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-13 01:48:33,876 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 01:48:33,880 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 01:48:49,568 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:48:49,596 - root - INFO - excludes: None
+2025-05-13 01:48:49,893 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt, status: <All keys matched successfully>
+2025-05-13 01:48:50,000 - uvicorn.error - INFO - Started server process [63902]
+2025-05-13 01:48:50,000 - uvicorn.error - INFO - Waiting for application startup.
+2025-05-13 01:48:50,008 - uvicorn.error - INFO - Application startup complete.
+2025-05-13 01:48:56,412 - root - INFO - download models from model hub: ms
+2025-05-13 01:48:59,572 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 01:48:59,576 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 01:49:02,245 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:49:02,246 - root - INFO - excludes: None
+2025-05-13 01:49:02,570 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt, status: <All keys matched successfully>
+2025-05-13 01:49:02,584 - root - INFO - download models from model hub: ms
+2025-05-13 01:49:02,613 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 01:49:02,614 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 01:49:02,622 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:49:02,622 - root - INFO - excludes: None
+2025-05-13 01:49:02,623 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt, status: <All keys matched successfully>
+2025-05-13 01:49:04,478 - root - INFO - download models from model hub: ms
+2025-05-13 01:49:07,615 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-13 01:49:07,617 - jieba - DEBUG - Loading model from cache /tmp/jieba.cache
+2025-05-13 01:49:08,199 - jieba - DEBUG - Loading model cost 0.582 seconds.
+2025-05-13 01:49:08,199 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-13 01:49:19,294 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 01:49:19,298 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 01:49:21,491 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 01:49:21,493 - root - INFO - excludes: None
+2025-05-13 01:49:21,796 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt, status: <All keys matched successfully>
+2025-05-13 01:49:21,819 - uvicorn.error - INFO - Started server process [63935]
+2025-05-13 01:49:21,820 - uvicorn.error - INFO - Waiting for application startup.
+2025-05-13 01:49:21,821 - uvicorn.error - INFO - Application startup complete.
+2025-05-13 11:36:03,235 - uvicorn.error - WARNING - StatReload detected changes in 'app/vad/fmsn.py'. Reloading...
+2025-05-13 11:36:03,354 - uvicorn.error - INFO - Shutting down
+2025-05-13 11:36:03,497 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-05-13 11:36:03,514 - uvicorn.error - INFO - Application shutdown complete.
+2025-05-13 11:36:03,516 - uvicorn.error - INFO - Finished server process [63935]
+2025-05-13 11:36:13,155 - root - INFO - download models from model hub: ms
+2025-05-13 11:36:19,418 - uvicorn.error - WARNING - StatReload detected changes in 'app/vad/fmsn.py'. Reloading...
+2025-05-13 11:36:22,075 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:36:22,090 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:36:34,255 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:36:34,257 - root - INFO - excludes: None
+2025-05-13 11:36:34,814 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt, status: <All keys matched successfully>
+2025-05-13 11:36:34,826 - root - INFO - download models from model hub: ms
+2025-05-13 11:36:34,851 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:36:34,851 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:36:34,869 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:36:34,869 - root - INFO - excludes: None
+2025-05-13 11:36:34,870 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt, status: <All keys matched successfully>
+2025-05-13 11:36:37,538 - root - INFO - download models from model hub: ms
+2025-05-13 11:36:42,063 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-13 11:36:42,064 - jieba - DEBUG - Loading model from cache /tmp/jieba.cache
+2025-05-13 11:36:42,910 - jieba - DEBUG - Loading model cost 0.845 seconds.
+2025-05-13 11:36:42,910 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-13 11:36:55,150 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:36:55,157 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:37:05,760 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:05,763 - root - INFO - excludes: None
+2025-05-13 11:37:06,121 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:06,178 - uvicorn.error - INFO - Started server process [63968]
+2025-05-13 11:37:06,179 - uvicorn.error - INFO - Waiting for application startup.
+2025-05-13 11:37:06,180 - uvicorn.error - INFO - Application startup complete.
+2025-05-13 11:37:12,740 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:14,614 - uvicorn.error - WARNING - StatReload detected changes in 'app/vad/fmsn.py'. Reloading...
+2025-05-13 11:37:14,918 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:37:14,933 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:37:17,594 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:17,596 - root - INFO - excludes: None
+2025-05-13 11:37:17,936 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:17,946 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:17,972 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:37:17,973 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:37:17,980 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:17,980 - root - INFO - excludes: None
+2025-05-13 11:37:17,981 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:19,700 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:22,872 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-13 11:37:22,874 - jieba - DEBUG - Loading model from cache /tmp/jieba.cache
+2025-05-13 11:37:23,683 - jieba - DEBUG - Loading model cost 0.810 seconds.
+2025-05-13 11:37:23,684 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-13 11:37:35,026 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:37:35,031 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:37:38,549 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:38,551 - root - INFO - excludes: None
+2025-05-13 11:37:38,839 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:38,871 - uvicorn.error - INFO - Started server process [64001]
+2025-05-13 11:37:38,871 - uvicorn.error - INFO - Waiting for application startup.
+2025-05-13 11:37:38,873 - uvicorn.error - INFO - Application startup complete.
+2025-05-13 11:37:43,002 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:44,942 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:37:44,945 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt
+2025-05-13 11:37:47,124 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:47,124 - root - INFO - excludes: None
+2025-05-13 11:37:47,281 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-online/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:47,287 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:47,306 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:37:47,307 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt
+2025-05-13 11:37:47,314 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:37:47,315 - root - INFO - excludes: None
+2025-05-13 11:37:47,316 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch/model.pt, status: <All keys matched successfully>
+2025-05-13 11:37:49,330 - root - INFO - download models from model hub: ms
+2025-05-13 11:37:52,211 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-13 11:37:52,212 - jieba - DEBUG - Loading model from cache /tmp/jieba.cache
+2025-05-13 11:37:52,889 - jieba - DEBUG - Loading model cost 0.677 seconds.
+2025-05-13 11:37:52,889 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-13 11:38:04,684 - root - INFO - Loading pretrained params from /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:38:04,693 - root - INFO - ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt
+2025-05-13 11:38:08,448 - root - INFO - scope_map: ['module.', 'None']
+2025-05-13 11:38:08,450 - root - INFO - excludes: None
+2025-05-13 11:38:08,751 - root - INFO - Loading ckpt: /usr/src/app/resources/modelscope/hub/iic/punc_ct-transformer_cn-en-common-vocab471067-large/model.pt, status: <All keys matched successfully>
+2025-05-13 11:38:08,784 - uvicorn.error - INFO - Started server process [64034]
+2025-05-13 11:38:08,785 - uvicorn.error - INFO - Waiting for application startup.
+2025-05-13 11:38:08,786 - uvicorn.error - INFO - Application startup complete.
+2025-05-14 02:36:38,748 - uvicorn.error - INFO - Shutting down
+2025-05-14 02:36:38,876 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-05-14 02:36:38,887 - uvicorn.error - INFO - Application shutdown complete.
+2025-05-14 02:36:38,888 - uvicorn.error - INFO - Finished server process [64034]
