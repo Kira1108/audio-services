@@ -6,6 +6,7 @@ from app.punctuations import PunctuationModel
 from app.schemas.core import ASRResult
 from uuid import uuid4
 import numpy as np
+import logging
 
 @dataclass
 class AudioInputPipeline:
@@ -17,11 +18,11 @@ class AudioInputPipeline:
         self.asr = ParaformerStreaming(chunk_ms=600)
         self.offline = ParaformerOffline()
         self.punc_model = PunctuationModel()
-        self.stream_cache = []
         self.speech_cache = np.array([])
         self.chunk_id = 0
         self.conversation_id = str(uuid4())
         self.partial_cache = np.array([])
+        self.pending_start:int = None
         
     def parse(
         self, 
@@ -45,54 +46,62 @@ class AudioInputPipeline:
         
         complete_vad = vad_result or is_final
         
-        # 如果未检测到稳态
-        if not complete_vad:
-            
-            # 如果缓存的语音流小于9600帧
-            if len(self.partial_cache) < 9600:
-                self.chunk_id += 1
-                return None
-            
-            else:
-                asr_result = self.asr.run(
-                    self.partial_cache, 
-                    sampling_rate=sampling_rate, 
-                    is_final = is_final)
-                self.partial_cache = np.array([])
-        
-        # 如果检测到稳态
-        else:
-            asr_result = self.offline.run(self.speech_cache)
-            self.partial_cache = np.array([])
-            
-            
-        if len(asr_result) == 0:
-            asr_result = " "
-            
-        else:
-            asr_result = asr_result[0].get('text', " ")
-        
-        # 整体ASR流缓存
-        self.stream_cache.append(asr_result)
+        is_partial = True
         
         if complete_vad:
+            complete_asr_result = self.offline.run(self.speech_cache)
+            logging.info(f"Complete ASR result: {complete_asr_result}, Chunk: {self.chunk_id}, {len(self.speech_cache)}")
             self.speech_cache = np.array([])
-            self.partial_cache = np.array([])
-            output = asr_result #self.punc_model.run(asr_result)
             is_partial = False
-        else:
-            output = asr_result
-            is_partial = True
             
-        res = ASRResult(
-            conversation_id=self.conversation_id,
-            chunk_id=self.chunk_id + 1,
-            start_time=start_time,
-            end_time=end_time,
-            text=output,
-            is_partial=is_partial
-        )
+            if len(complete_asr_result) == 0:
+                complete_asr_result = " "
+            else:
+                complete_asr_result = complete_asr_result[0].get('text', " ")
+            
+        # 如果缓存的语音流小于9600帧
+        if len(self.partial_cache) < 9600:
+            self.chunk_id += 1
+            partial_asr_result = ""
+            logging.info(f"Skip short vad")
+            if not complete_vad:
+                return None
+        
+        else:
+            partial_asr_result = self.asr.run(
+                self.partial_cache, 
+                sampling_rate=sampling_rate, 
+                is_final = is_final)
+            logging.info(f"Partial ASR result: {partial_asr_result}, Chunk: {self.chunk_id}, {len(self.partial_cache)}")
+            self.partial_cache = np.array([])
+
+        if len(partial_asr_result) == 0:
+            partial_asr_result = " "
+        else:
+            partial_asr_result = partial_asr_result[0].get('text', " ")
+
+        
+        logging.info(f"Is complete vad: {complete_vad} ")
+        if complete_vad:    
+            res = ASRResult(
+                conversation_id=self.conversation_id,
+                chunk_id=self.chunk_id + 1,
+                start_time=start_time,
+                end_time=end_time,
+                text=complete_asr_result,
+                is_partial=is_partial
+            )
+            logging.info(str(res))
+        else:
+            res = ASRResult(
+                conversation_id=self.conversation_id,
+                chunk_id=self.chunk_id + 1,
+                start_time=start_time,
+                end_time=end_time,
+                text=partial_asr_result,
+                is_partial=is_partial
+            )
+            logging.info(str(res))
         
         self.chunk_id += 1
-        
         return res

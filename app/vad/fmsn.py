@@ -22,6 +22,7 @@ class FMSNVad:
         self.model = load_fmsn()
         self.cache = {}
         self.timestamp = 0
+        self.prev_status = None
         
     def run(self, speech_chunk, sample_rate:int = 16000, is_final:bool = False):
         # if not sample_rate == 16000:
@@ -43,6 +44,7 @@ class FMSNVad:
     
     @timer("FMSNVad")
     def vad(self, speech_chunk, sample_rate:int = 16000, is_final:bool = False):
+        
         res = self.run(speech_chunk, sample_rate, is_final)
         # 最后一个vad段，是一个结束的vad段
         
@@ -53,3 +55,39 @@ class FMSNVad:
             return False
         
         return False
+        # res = self.run(speech_chunk, sample_rate, is_final)
+        
+        # if len(res) == 0 or len(res[0]['value']) == 0:
+        #     return None
+        
+        # # 返回当前音频的端点
+        # return [
+        #     res[0]['value'][0][0], 
+        #     res[0]['value'][-1][1]
+        # ]
+        
+        # # res = res[0]['value']
+        
+        # return res[0]['value']
+        # # 如果没有检测到任何端点
+        # if len(res) == 0 or len(res[0]['value']) == 0:
+        #     empty_result = True
+        # else:
+        #     empty_result = False
+        
+        # # 如果上一个状态是稳态
+        # elif self.prev_status == "end":
+        #     if empty_result
+        
+        # # 如果上一个状态是非稳态
+        # elif self.prev_status == 'start':
+        #     pass
+        
+        
+        # try:
+        #     if res[-1][-1] >=0:
+        #         return True
+        # except:
+        #     return False
+        
+        # return False
