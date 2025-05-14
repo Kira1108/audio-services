@@ -84,6 +84,7 @@ class ParaformerStreaming:
             encoder_chunk_look_back=self.encoder_chunk_look_back, 
             decoder_chunk_look_back=self.decoder_chunk_look_back)
 
+    @timer("ParaformerStreaming")
     def run(self, speech_chunk, sampling_rate:int =16000, is_final = False):
             
         speech_chunk = np.array(speech_chunk).astype("float32")
